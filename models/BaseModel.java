@@ -4,6 +4,11 @@ public class BaseModel {
     private String id;
     private Date createdAt;
 
+    public BaseModel(String id, Date createdAt) {
+        this.id = id;
+        this.createdAt = createdAt;
+    }
+
     public String getId() {
         return id;
     }

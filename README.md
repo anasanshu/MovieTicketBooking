@@ -4,17 +4,7 @@
 
 [Entity Diagram](https://app.diagrams.net/#G1nZK17Np6yA8NrUs8ht9kcfeigSbF5Ys2)
 
-
-1. BookingService
-    createBooking   [user, show, List<Seats>]
-
-2. ShowService
-    createShow      []
-
-3. TheatreService
-    createTheatre   []
-    createScreens   []
-    createSeats     []
-
-4. MovieService
-    createMovie     []
+## ToDo
+1. Complete TheatreService
+2. Complete MovieService
+3. Resolve Repository issue - Single instance of repository needs to be present

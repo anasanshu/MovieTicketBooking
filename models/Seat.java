@@ -1,8 +1,17 @@
+import java.util.Date;
+
 public class Seat extends BaseModel {
     private int rowNo;
     private int seatNo;
     private SeatStatus seatStatus;
 
+    public Seat(String id, Date createdAt, int rowNo, int seatNo, SeatStatus seatStatus) {
+        super(id, createdAt);
+        this.rowNo = rowNo;
+        this.seatNo = seatNo;
+        this.seatStatus = seatStatus;
+    }
+    
     public SeatStatus getSeatStatus() {
         return seatStatus;
     }

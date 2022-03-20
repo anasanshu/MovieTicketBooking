@@ -1,9 +1,17 @@
+import java.util.Date;
 import java.util.List;
 
 public class Screen extends BaseModel {
     private String name;
     private Theatre theatre;
     private List<Seat> seats;
+
+    public Screen(String id, Date createdAt, String name, Theatre theatre) {
+        super(id, createdAt);
+        this.name = name;
+        this.theatre = theatre;
+        // this.seats = seats;
+    }
 
     public String getName() {
         return name;

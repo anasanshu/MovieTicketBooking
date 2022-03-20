@@ -6,6 +6,15 @@ public class Show extends BaseModel {
     private Date startTime;
     private int durationInMins;
 
+    public Show(String id, Date createdAt, String name, Screen screen, Movie movie, Date startTime, int durationInMins) {
+        super(id, createdAt);
+        this.name = name;
+        this.screen = screen;
+        this.movie = movie;
+        this.startTime = startTime;
+        this.durationInMins = durationInMins;
+    }
+
     public String getName() {
         return name;
     }

@@ -5,7 +5,16 @@ public class Booking extends BaseModel {
     private List<Seat> seatsBooked;
     private BookingStatus bookingStatus;
     private String user;
-    
+
+    public Booking(String id, Date createdAt, Show show, List<Seat> seatsBooked, BookingStatus bookingStatus,
+            String user) {
+        super(id, createdAt);
+        this.show = show;
+        this.seatsBooked = seatsBooked;
+        this.bookingStatus = bookingStatus;
+        this.user = user;
+    }
+
     public Show getShow() {
         return show;
     }
